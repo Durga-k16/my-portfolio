@@ -540,12 +540,13 @@ section {
 /* ============================
    HAMBURGER MENU + RESPONSIVE NAV
    ============================ */
-
+/* Hide hamburger on desktop */
 .hamburger {
+    display: none;
+    position: relative;
     z-index: 3000;
-    position:relative;
     flex-direction: column;
-    gap: 5px;
+    gap: 6px;
     cursor: pointer;
 }
 
@@ -554,33 +555,41 @@ section {
     height: 3px;
     background: var(--text-color);
     border-radius: 3px;
-    transition: 0.3s ease;
+    transition: 0.35s ease;
 }
 
+/* Desktop nav */
 .nav-menu {
     display: flex;
     align-items: center;
     gap: 25px;
 }
 
-@media (max-width:900px) {
+/* ================= MOBILE ================= */
+@media (max-width: 900px) {
+
+    /* Show hamburger */
     .hamburger {
         display: flex;
     }
 
+    /* Slide-in menu */
     .nav-menu {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 70%;
-        height: 40vh;
-        background: var(--bg-color);
-        box-shadow: -2px 0 12px rgba(0, 0, 0, 0.25);
+        width: 75%;
+        height: 100vh; /* FIX */
+        background: #cac3a013; /* FIX */
+        backdrop-filter: blur(10px);
+        box-shadow: -4px 0 18px rgba(0, 0, 0, 0.35);
+
         flex-direction: column;
         align-items: flex-start;
-        padding: 120px 35px;
-        gap: 30px;
-        transition: all 0.4s ease;
+        padding: 100px 30px;
+        gap: 28px;
+
+        transition: right 0.4s ease;
         z-index: 2000;
     }
 
@@ -588,6 +597,7 @@ section {
         right: 0;
     }
 
+    /* Links */
     .nav-links {
         display: flex;
         flex-direction: column;
@@ -596,19 +606,19 @@ section {
 
     .nav-links a {
         padding: 14px 0;
-        margin: 0;
-        font-size: 1.15em;
+        font-size: 1.1em;
         width: 100%;
     }
 
+    /* Button */
     .btn-hire {
         width: 100%;
-        padding: 12px;
+        padding: 14px;
         text-align: center;
-        font-size: 1.1em;
+        font-size: 1.05em;
     }
 
-    /* Hamburger animation */
+    /* ================= HAMBURGER ANIMATION ================= */
     .hamburger.active span:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
@@ -621,6 +631,11 @@ section {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
+
+
+
+
 /* ============================
    RESPONSIVE FIX FOR PROJECT SECTION
    ============================ */
@@ -718,3 +733,4 @@ html {
     color: var(--subtle-text);
     margin: 2px 0;
 }
+
