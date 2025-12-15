@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio - Durga Devi K</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS FILE -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JS FILE -->
+  <script defer src="script.js"></script>
+
+  <!-- EmailJS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    (function() {
+        emailjs.init("0TpDRrzI6laYW1vef");  // <-- replace with your Public Key
+    })();
+  </script>
+</head>
+
+<body>
+    
+
+  <!-- NAVIGATION BAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">My Portfolio</div>
+
+      <!-- HAMBURGER MENU -->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- NAV MENU -->
+      <div class="nav-menu">
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a href="#contact"><button class="btn-hire">Hire Me</button></a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HOME SECTION -->
+  <section id="home" class="hero-section">
+
+
+    <p class="greeting">
+      Hey, I'm <span class="name">Durga Devi K</span>
+    </p>
+
+    <div class="role-desc">
+      A <span class="role-title" id="role-title-text"></span><span id="cursor">|</span>
+    </div>
+
+    <p class="bio-short">
+      Who build responsive, user-friendly websites and applications with clean UI and modern design.
+    </p>
+
+    <!-- SOCIAL ICONS -->
+<div class="hero-socials">
+  <a href="https://github.com/Durga-k16" target="_blank" class="social-icon github">
+    <img src="gitimg.jpg" alt="GitHub">
+  </a>
+  <a href="https://www.linkedin.com/in/durga-devi-4222682a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-icon linkedin">
+    <img src="liimg.png" alt="LinkedIn">
+  </a>
+</div>
+
+    <div class="hero-actions">
+      <a href="#projects"><button class="btn-primary">My Projects</button></a>
+      <a href="resume.pdf"><button class="btn-secondary">Open CV</button></a>
+    </div>
+  </section>
+
+  <div class="section-divider-container">
+    <hr class="section-divider">
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about-section">
+      <h2 class="section-title main-title-center">About</h2>
+
+      <div class="about-layout">
+        <div class="about-left">
+            <div class="profile-wrap">
+                <img class="profile-img-file" src="p.jpg" alt="Profile Image">
+            </div>
+        </div>
+
+        <div class="about-right">
+            <div class="about-text">
+                <p>
+                   <b style="color:#8c3c0ecc">Welcome to my portfolio!</b> I’m a passionate <b>UI/UX Designer</b> focused on creating intuitive, visually engaging, and user-centered digital experiences. I transform ideas into clean layouts and smooth interactions using tools like <b style="color:rgb(125, 125, 125)">Figma</b> and <b style="color:rgb(125, 125, 125)">Canva</b>.
+
+<p>Alongside design, I work as a <b>Front-End Developer</b>, bringing interfaces to life through responsive and interactive web development. I’m also expanding my technical skills by learning <b>Java</b> and working with <b>MySQL</b> to strengthen my ability to build seamless, practical solutions.
+
+<p>I’m dedicated to crafting digital experiences that are beautiful, intuitive, and thoughtfully built.
+                </p>
+            </div>
+
+            <div class="about-skills">
+                <h3 class="section-title skills-inline-title">SKILLS</h3>
+                <br>
+                <div class="skills-icons">
+                    <img class="skill-img" src="htmlmm.png" alt="HTML5">
+                    <img class="skill-img" src="csslogo.png" alt="CSS3">
+                    <img class="skill-img" src="Javascript.png" alt="JavaScript">
+                    <img class="skill-img" src="figma-logo.png" alt="Figma">
+                    <img class="skill-img" src="javaimg.png" alt="Java">
+                    <img class="skill-img" src="Mysqllogo.png" alt="MySQL">
+                </div>
+            </div>
+        </div>
+      </div>
+  </section>
+
+  
+  <div class="section-divider-container">
+  <hr class="section-divider">
+</div>
+
+<!-- EDUCATION SECTION - Glassmorphism Design -->
+<section id="education" class="education-section">
+    <h2 class="section-title main-title-center">Education</h2>
+
+    <div class="edu-container">
+        <div class="edu-card">
+            <h3>Mohamed Sathak Engineering College</h3>
+            <p class="edu-year">2022–2026</p>
+            <p class="edu-detail">CGPA: 8.5</p>
+        </div>
+
+        <div class="edu-card">
+            <h3>AVMS Matric Higher Secondary School</h3>
+            <p class="edu-year">2021–2022</p>
+            <p class="edu-detail">Percentage: 87.6%</p>
+        </div>
+
+        <div class="edu-card">
+            <h3>Housing Board Matric High School</h3>
+            <p class="edu-year">2019–2020</p>
+            <p class="edu-detail">Percentage: 91%</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- EXPERIENCE SECTION -->
+ 
+<section id="experience" class="experience-section">
+    <h2 class="section-title main-title-center">Internship</h2>
+     
+    <div class="exp-container">
+       <ul>
+        <div class="exp-item">
+           
+            <h3><li style="color:#000000">SkillCraft Technology</li></h3>
+            <p class="exp-role">Web Developer Intern</p>
+            <!---<P class="exp-des">Built a web page, tic-tac-toe game, stopwatch app, and to-do list using HTML, CSS, JavaScript and Git.</P>--->
+            <p class="exp-date">JAN 2025 – FEB 2025</p>
+            
+        </div>
+        <br>
+        <div class="exp-item">
+            <li style="color:#000000"><h3>AstroWeb Solution</h3></li>
+            <p class="exp-role">Web Developer Intern</p>
+            <!--<p class="exp-des">Assisted in developing responsive websites using HTML, CSS, and JavaScript.
+Collaborated with senior developers to implement client requirements and UI improvements</p>-->
+            <p class="exp-date">JAN 2025 – FEB 2025</p>
+        </div>
+        <br>
+        <div class="exp-item">
+            <li style="color:#000000"><h3>MoviCloud pvt ltd.,</h3></li>
+            <p class="exp-role">Web Developer Intern</p>
+            <!--<p class="exp-des">Contributed to front-end and back-end development using React.
+Worked on a Hospital Management System project, including patient records and appointment
+scheduling</p>-->
+            <p class="exp-date">MAY 2025 – JUN 2025</p>
+        </div>
+        <br>
+        <div class="exp-item">
+            <li style="color:#020100"><h3>Adventure Technology Solution</h3></li>
+            <p class="exp-role">Full Stack Developer Intern</p>
+            <!--<p class="exp-des">Supported end-to-end web application development from design to deployment.
+Gained hands-on experience with databases, APIs, and full-stack workflows.-->
+            <p class="exp-date">JUL 2025 – AUG 2025</p>
+        </div>
+    </ul>
+    </div>
+   
+</section>
+
+
+
+
+
+  
+  <div class="section-divider-container">
+    <hr class="section-divider">
+  </div>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="skills-section">
+      <h4 class="services-title">Services I Provide</h4>
+
+      <div class="services-grid">
+          <div class="service-card">
+              <h3>Front-End Development</h3>
+              <p>
+                  Design and develop clean, modern,responsive, user-friendly websites using HTML, CSS, JavaScript and React.
+              </p>
+          </div>
+
+          <div class="service-card">
+              <h3>UI/UX Design</h3>
+              <p>
+                  Create modern and intuitive user interfaces using Figma. From wireframes to high-fidelity prototypes,
+                  I design experiences that are visually appealing and easy to use.
+              </p>
+          </div>
+
+          <div class="service-card">
+              <h3>Poster Design</h3>
+              <p>
+                  Create eye-catching posters for events, promotions, and social media campaigns,
+                  blending creativity with clear visual communication.
+              </p>
+          </div>
+
+          <div class="service-card">
+              <h3>Java Development</h3>
+              <p>
+                  Create secure and efficient back-end systems using Java and MySQL,
+                  focusing on performance, scalability, and clean architecture.
+              </p>
+          </div>
+      </div>
+  </section>
+
+  <div class="section-divider-container">
+    <hr class="section-divider">
+  </div>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="projects-section">
+      <h2 class="section-title main-title-center">Projects</h2>
+
+      <div class="projects-container">
+
+        <div class="project-card">
+            <div class="project-layout">
+                <img src="prjct1.png" alt="Hospital Management System" class="project-img">
+                <div class="project-content">
+                    <h3>Hospital Management System</h3>
+                    
+                    <p class="project-desc">
+                        A full-stack hospital management system that manages hospital operations — from patient intake to billing.
+                    </p>
+                    <ul>
+                        <li>Manages patient & doctor records</li>
+                        <li>Appointment scheduling</li>
+                        <li>Intake forms, prescription modules</li>
+                    </ul>
+                    <p class="tech-used">
+                        Tech Used: React, FastAPI, MongoDB, Render, REST API, JSON, Async Programming, Figma
+                    </p>
+                    <br>
+                    <a href="http://healthdash-app.netlify.app" style="color: #8c3c0e;">
+                        <button class="btn-prjct">View Project</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-layout">
+                <img src="prjct2.png" alt="Department Website" class="project-img">
+                <div class="project-content">
+                    <h3>Department Website</h3>
+                    
+                    <p class="project-desc">
+                        A responsive department website displaying academic info with admin panel and AI chatbot.
+                    </p>
+                    <ul>
+                        <li>Faculty & resource management</li>
+                        <li>Announcements dashboard</li>
+                        <li>AI-powered chatbot</li>
+                    </ul>
+                    <p class="tech-used">
+                        Tech Used: HTML, CSS, JavaScript, Figma, GitHub
+                    </p>
+                    <br>
+                    <a href="https://msec-it-cc.web.app/" style="color: #8c3c0e;">
+                        <button class="btn-prjct">View Project</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+      </div>
+  </section>
+
+  <div class="section-divider-container">
+    <hr class="section-divider">
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact-section">
+      <h2 class="contact-title section-title main-title-center">Get In Touch</h2>
+
+      <form class="contact-form">
+          <div class="form-group-row">
+              <div class="form-group">
+                  <label for="name">Your Name*</label>
+                  <input type="text" id="name" name="name" value="Durga Devi" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">Your Email*</label>
+                  <input type="email" id="email" name="email" value="info@example.com" required>
+              </div>
+          </div>
+
+          <div class="form-group-row">
+              <div class="form-group full-width">
+                  <label for="service">Services*</label>
+                  <select id="service" name="service" required>
+                      <option value="" disabled selected>Select Services</option>
+                      <option value="frontend">Front-End Development</option>
+                      <option value="uiux">UI/UX Design</option>
+                      <option value="java">Java Development</option>
+                      <option value="poster">Poster Design</option>
+                  </select>
+              </div>
+          </div>
+
+          <div class="form-group">
+              <label for="message">Your Message*</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+  </section>
+
+</body>
+</html>
